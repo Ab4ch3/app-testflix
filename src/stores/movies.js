@@ -1,11 +1,12 @@
 import { defineStore } from 'pinia'
 import axios from 'axios'
 
-// const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
+const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 
 export const useMovieStore = defineStore('movies', {
   state: () => ({
-    FeaturedMovies: []
+    FeaturedMovies: [],
+    ShowMovies: []
   }),
   getters: {
     /*  getBackgroundFeatured(state) {
@@ -14,6 +15,21 @@ export const useMovieStore = defineStore('movies', {
       // let response = fetch(`${IMAGE_URL}${movie.backdrop_path}`)
       return movie
     } */
+    getFeaturedMovies(state) {
+      return state.FeaturedMovies
+    },
+    displaymovie(state) {
+      let arr_movies = state.FeaturedMovies.slice(0, 4)
+      let map_movies = arr_movies.map((movie) => {
+        return {
+          ...movie,
+          backdrop_path: `${IMAGE_URL}${movie.backdrop_path}`,
+          poster_path: `${IMAGE_URL}${movie.backdrop_path}`
+        }
+      })
+      console.log(map_movies)
+      return (this.ShowMovies = map_movies)
+    }
   },
   actions: {
     async getFeaturedMovie() {

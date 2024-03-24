@@ -25,7 +25,7 @@
               </button>
 
               <button
-                class="flex flex-row px-2 sm:px-24 border border-gray-400 rounded-md items-center"
+                class="flex flex-row px-2 sm:px-24 border border-solid border-gray-300 rounded-md items-center bg-brand-color-2 opacity-60"
               >
                 <img class="h-5" :src="Plus" alt="" />
                 <span class="text-white hidden sm:flex">MI LISTA</span>
