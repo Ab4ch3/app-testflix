@@ -8,9 +8,9 @@
         </header>
         <main class="flex flex-col sm:flex-row items-center sm:items-start">
           <div class="w-4/5 sm:w-full flex flex-col sm:h-96 mt-60 sm:mt-96">
-            <P class="text-center sm:text-left text-white text-lg sm:text-2xl font-semibold"
-              >ORIGINAL DE TESTFLIX</P
-            >
+            <p class="text-center sm:text-left text-white text-lg sm:text-2xl font-semibold">
+              ORIGINAL DE TESTFLIX
+            </p>
             <h1
               class="text-center sm:text-left text-brand-color-3 text-6xl sm:text-9xl font-semibold"
             >
@@ -21,13 +21,13 @@
                 class="flex flex-row items-center gap-4 py-4 px-9 sm:px-24 text-gray-300 font-semibold rounded-md bg-brand-color-2 justify-between"
               >
                 <img class="h-5" :src="play" alt="" />
-                REPRODUCIR
+                REpRODUCIR
               </button>
 
               <button
                 class="flex flex-row px-2 sm:px-24 border border-solid border-gray-300 rounded-md items-center bg-brand-color-2 opacity-60"
               >
-                <img class="h-5" :src="Plus" alt="" />
+                <img class="h-5" :src="plus" alt="" />
                 <span class="text-white hidden sm:flex">MI LISTA</span>
               </button>
             </div>
@@ -53,7 +53,7 @@ import NavMobile from '@/components/nav/nav_mobile.vue'
 import Navegation from '@/components/nav/nav_all.vue'
 import LateralMovies from '@/components/lateral_movies.vue'
 import CarouselMovies from '@/components/carousel_movies.vue'
-import Plus from '@/assets/Plus.png'
+import plus from '@/assets/Plus.png'
 import play from '@/assets/play.png'
 
 // const store = useMovieStore()

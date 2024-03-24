@@ -6,16 +6,16 @@
     ></div>
     <div v-else class="w-72 h-36 my-3 flex justify-center items-center">
       <img :src="props.movie.backdrop_path" alt="" />
-      <button class="absolute" @click="openMovie">
+      <!-- <button class="absolute" @click="openMovie">
         <img class="" :src="playmovie" alt="" />
-      </button>
+      </button> -->
       <!-- <div class="absolute">{{ props.movie }}</div> -->
     </div>
   </div>
 </template>
 
 <script setup>
-import { computed, ref } from 'vue'
+import { computed, ref, onBeforeUnmount } from 'vue'
 
 const props = defineProps({
   movie: {
@@ -34,6 +34,10 @@ const isLoading = computed(() => {
     'bg-red-500': !loading.value,
     'bg-inherit': loading.value
   }
+})
+
+onBeforeUnmount(() => {
+  clearInterval(setTimeout)
 })
 </script>
 
