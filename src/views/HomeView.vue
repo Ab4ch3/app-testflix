@@ -18,18 +18,25 @@
             </h1>
             <div class="pt-10 pb-0 flex flex-row justify-center sm:justify-start gap-8 border-none">
               <button
-                class="flex flex-row items-center gap-4 py-4 px-9 sm:px-24 text-gray-300 font-semibold rounded-md bg-brand-color-2 justify-between"
+                class="flex flex-row items-center gap-4 py-4 px-9 sm:px-24 text-gray-300 font-semibold rounded-md bg-brand-color-2 justify-center"
               >
                 <img class="h-5" :src="play" alt="" />
-                REpRODUCIR
+                REPRODUCIR
               </button>
 
               <button
-                class="flex flex-row px-2 sm:px-24 border border-solid border-gray-300 rounded-md items-center bg-brand-color-2 opacity-60"
+                class="flex flex-row items-center justify-center border border-solid py-3 px-1 sm:px-24 rounded-md border-gray-400"
               >
-                <img class="h-5" :src="plus" alt="" />
+                <img class="" :src="plus" alt="" />
                 <span class="text-white hidden sm:flex">MI LISTA</span>
               </button>
+
+              <!-- <button
+                class="flex flex-row px-2 sm:px-24 border border-solid border-gray-300 rounded-md items-center bg-brand-color-2 opacity-60"
+              >
+                <img class="sm:flex h-5" :src="plus" alt="" />
+                <span class="text-white hidden sm:flex">MI LISTA</span>
+              </button> -->
             </div>
           </div>
           <div
