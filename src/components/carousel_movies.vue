@@ -38,21 +38,20 @@
 </template>
 
 <script setup>
-import arrowup from '../assets/arrowup.png'
-import arrowdown from '../assets/arrowdown.png'
-import Movie from '../components/movie_component.vue'
-import { useMovieStore } from '../stores/movies.js'
+import arrowup from '@/assets/arrowup.png'
+import arrowdown from '@/assets/arrowdown.png'
+import Movie from '@/components/movie_component.vue'
+import { useMovieStore } from '@/stores/movies.js'
 import { computed } from 'vue'
 
 let store = useMovieStore()
 store.getFeaturedMovie()
 
-// let loading = ref(true)
-
 const getListMovies = computed(() => {
-  return store.ShowMovies
+  return store.displaymovie
 })
-// console.log(getListMovies.value)
+
+console.log(getListMovies.value, 'desde carouserl')
 </script>
 
 <style scoped></style>

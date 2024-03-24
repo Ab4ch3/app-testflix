@@ -5,8 +5,7 @@ const IMAGE_URL = 'https://image.tmdb.org/t/p/original'
 
 export const useMovieStore = defineStore('movies', {
   state: () => ({
-    FeaturedMovies: [],
-    ShowMovies: []
+    FeaturedMovies: []
   }),
   getters: {
     /*  getBackgroundFeatured(state) {
@@ -15,7 +14,7 @@ export const useMovieStore = defineStore('movies', {
       // let response = fetch(`${IMAGE_URL}${movie.backdrop_path}`)
       return movie
     } */
-    getFeaturedMovies(state) {
+    getFeaturedMovieState(state) {
       return state.FeaturedMovies
     },
     displaymovie(state) {
@@ -27,12 +26,11 @@ export const useMovieStore = defineStore('movies', {
           poster_path: `${IMAGE_URL}${movie.backdrop_path}`
         }
       })
-      return (this.ShowMovies = map_movies)
+      return map_movies
     }
   },
   actions: {
     async getFeaturedMovie() {
-      console.log('llegue aca')
       // let loading = true
       let API_PROVIDER_FEATURED =
         'https://api.themoviedb.org/3/movie/now_playing?api_key=6f26fd536dd6192ec8a57e94141f8b20'
