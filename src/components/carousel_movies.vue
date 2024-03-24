@@ -50,8 +50,6 @@ store.getFeaturedMovie()
 const getListMovies = computed(() => {
   return store.displaymovie
 })
-
-console.log(getListMovies.value, 'desde carouserl')
 </script>
 
 <style scoped></style>
