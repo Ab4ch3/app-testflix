@@ -27,7 +27,6 @@ export const useMovieStore = defineStore('movies', {
           poster_path: `${IMAGE_URL}${movie.backdrop_path}`
         }
       })
-      console.log(map_movies)
       return (this.ShowMovies = map_movies)
     }
   },

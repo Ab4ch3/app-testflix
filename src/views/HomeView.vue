@@ -48,7 +48,7 @@
 </template>
 
 <script setup>
-import { useMovieStore } from '@/stores/movies.js'
+// import { useMovieStore } from '@/stores/movies.js'
 import NavMobile from '@/components/nav/nav_mobile.vue'
 import Navegation from '@/components/nav/nav_all.vue'
 import LateralMovies from '@/components/lateral_movies.vue'
@@ -56,8 +56,8 @@ import CarouselMovies from '@/components/carousel_movies.vue'
 import Plus from '@/assets/Plus.png'
 import play from '@/assets/play.png'
 
-const store = useMovieStore()
-store.getFeaturedMovie()
+// const store = useMovieStore()
+// store.getFeaturedMovie()
 </script>
 <style scoped>
 #hero {
