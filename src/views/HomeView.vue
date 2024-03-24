@@ -1,6 +1,6 @@
 <template>
   <div class="w-full h-screen">
-    <div id="hero" class="bg-black h-3/4 sm:h-screen">
+    <div id="hero" class="bg-black h-3/4 sm:h-screen sm:w-screen">
       <div class="container mx-auto">
         <header class="">
           <NavMobile />

@@ -40,7 +40,6 @@
 <script setup>
 import arrowup from '../assets/arrowup.png'
 import arrowdown from '../assets/arrowdown.png'
-// import playmovie from '../assets/playmovie.png'
 import Movie from '../components/movie_component.vue'
 import { useMovieStore } from '../stores/movies.js'
 import { computed } from 'vue'
