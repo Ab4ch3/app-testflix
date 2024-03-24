@@ -3,13 +3,13 @@
     <button class="pb-3 flex flex-row justify-center">
       <img :src="arrowup" alt="" />
     </button>
-    <div class="flex flex-col">
-      <div class="bg-yellow-400 h-36 my-4"></div>
-      <div class="bg-yellow-400 h-36 my-4"></div>
-      <div class="bg-yellow-400 h-36 my-4"></div>
-      <div class="bg-yellow-400 h-36 my-4"></div>
+    <div class="flex flex-col items-center">
+      <div class="bg-yellow-400 w-72 h-36 my-3"></div>
+      <div class="bg-yellow-400 w-72 h-36 my-3"></div>
+      <div class="bg-yellow-400 w-72 h-36 my-3"></div>
+      <div class="bg-yellow-400 w-72 h-36 my-3"></div>
     </div>
-    <button class="pt-3 pb-10 flex flex-row justify-center">
+    <button class="pt-3 pb-10 sm:pb-0 flex flex-row justify-center">
       <img :src="arrowdown" alt="" />
     </button>
   </div>
