@@ -1,7 +1,7 @@
 <template>
   <div
     v-show="props.isOpen"
-    class="bg-brand-color-1 absolute top-0 sm:right-0 w-full sm:w-1/3 h-screen p-5 duration-700 ease-in overflow-hidden"
+    class="bg-brand-color-1 fixed top-0 sm:right-0 w-full sm:w-1/3 h-screen p-5 duration-700 ease-in overflow-hidden z-40"
   >
     <div class="flex flex-row justify-between items-center">
       <button @click="closeSideBar">
@@ -63,7 +63,7 @@
         </li>
       </ul>
     </div>
-
+    <!-- ADD MOVIE COMPONENT -->
     <Add_movie class="mt-10 pl-1" />
     <div class="flex flex-row justify-center sm:justify-start mt-16">
       <button class="w-52 sm:mt-20 py-3 border bottom-2 bg-brand-color-3 font-normal">

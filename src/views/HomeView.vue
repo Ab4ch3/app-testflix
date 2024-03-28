@@ -1,13 +1,13 @@
 <template>
-  <div class="w-full h-screen">
-    <div id="hero" class="bg-black h-3/4 sm:h-screen sm:w-screen">
-      <div class="container mx-auto">
-        <header class="">
-          <NavMobile />
-          <Navegation />
-        </header>
-        <main class="flex flex-col sm:flex-row items-center sm:items-start">
-          <div class="w-4/5 sm:w-full flex flex-col sm:h-96 mt-60 sm:mt-96">
+  <div class="w-full min-h-screen">
+    <div id="hero" class="bg-black h-full sm:h-full">
+      <header class="overflow-hidden md:container md:mx-auto">
+        <NavMobile />
+        <Navegation />
+      </header>
+      <div class="md:container md:mx-auto">
+        <main class="flex flex-col md:flex-row items-center sm:items-start">
+          <div class="w-4/5 sm:w-full flex flex-col mt-60 sm:mt-96">
             <p class="text-center sm:text-left text-white text-lg sm:text-2xl font-semibold">
               ORIGINAL DE TESTFLIX
             </p>
@@ -39,12 +39,10 @@
               </button> -->
             </div>
           </div>
-          <div
-            class="w-full h-full sm:h-full sm:w-2/6 bg-brand-color-2 sm:bg-inherit pt-20 sm:pt-6"
-          >
+          <div class="w-full sm:h-full bg-brand-color-2 sm:bg-inherit pt-20 sm:p-0">
             <LateralMovies />
 
-            <div class="flex flex-col w-full items-center pt-6 px-5">
+            <div class="flex flex-col w-full items-center pt-3 px-5">
               <CarouselMovies />
             </div>
           </div>
@@ -70,4 +68,8 @@ import play from '@/assets/play.png'
   /* background-position: center; */
   background-size: 100% 100%;
 }
+/* 
+* {
+  border: 2px solid red;
+} */
 </style>

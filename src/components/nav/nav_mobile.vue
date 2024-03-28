@@ -1,5 +1,5 @@
 <template>
-  <div class="sm:hidden flex flex-row items-center justify-between px-5 py-5">
+  <div class="md:hidden flex flex-row items-center justify-between px-5 py-5">
     <div>
       <button @click="openSideBar" class="">
         <img :src="Menu" alt="menu icon" srcset="" />

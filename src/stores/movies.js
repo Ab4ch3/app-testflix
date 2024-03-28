@@ -31,7 +31,6 @@ export const useMovieStore = defineStore('movies', {
   },
   actions: {
     async getFeaturedMovie() {
-      // let loading = true
       let API_PROVIDER_FEATURED =
         'https://api.themoviedb.org/3/movie/now_playing?api_key=6f26fd536dd6192ec8a57e94141f8b20'
       let response = await axios.get(API_PROVIDER_FEATURED)
